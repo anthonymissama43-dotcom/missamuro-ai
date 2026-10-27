@@ -3,235 +3,897 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Missamuro AI Consultant Co. — AI consulting, business automation, web development and digital solutions.">
   <meta name="theme-color" content="#050505">
+  <meta name="description" content="Missamuro AI Consultant Co. — AI consulting, business automation, digital products and intelligent business systems.">
+  <meta name="author" content="Anthony Missama">
 
-  <title>MISSAMURO AI CONSULTANT CO.</title>
+  <title>MISSAMURO — AI Consultant Co.</title>
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 
-<body>
+<body class="loading">
 
-  <header class="header">
-    <a href="#home" class="brand">
-      <img src="logo.svg" alt="Missamuro AI Consultant Co.">
-      <div>
-        <strong>MISSAMURO</strong>
-        <span>AI CONSULTANT CO.</span>
+  <!-- =========================
+       INTRO
+  ========================== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-mark">
+        <span>M</span>
       </div>
+      <div class="loader-line"></div>
+      <p>MISSAMURO AI</p>
+    </div>
+  </div>
+
+
+  <!-- =========================
+       CURSOR
+  ========================== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+  <header class="header" id="header">
+  <div class="header-inner">
+
+    <a href="#home" class="brand" aria-label="Missamuro home">
+      <span class="brand-mark" aria-hidden="true">
+        <span>M</span>
+      </span>
+
+      <span class="brand-text">
+        <span class="brand-name">MISSAMURO</span>
+        <span class="brand-sub">AI CONSULTANT CO.</span>
+      </span>
     </a>
 
-    <button class="menu-toggle" id="menuToggle">☰</button>
-
-    <nav id="nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <nav class="nav-links" id="nav" aria-label="Main navigation">
+      <a href="#home"><span class="nav-number">00</span>HOME</a>
+      <a href="#capabilities"><span class="nav-number">01</span>CAPABILITIES</a>
+      <a href="#work"><span class="nav-number">02</span>WORK</a>
+      <a href="#studio"><span class="nav-number">03</span>STUDIO</a>
+      <a href="#contact"><span class="nav-number">04</span>CONTACT</a>
     </nav>
-  </header>
+
+    <a href="#contact" class="header-cta">START A PROJECT ↗</a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="nav"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</header>
+
 
   <main>
 
-    <section class="hero" id="home">
-      <div class="hero-grid"></div>
+    <!-- =========================
+         HOME
+    ========================== -->
+    <section class="home" id="home">
 
-      <div class="hero-content">
-        <div class="badge">AI • AUTOMATION • DIGITAL SOLUTIONS</div>
+      <div class="home-grid"></div>
+      <div class="home-glow home-glow-one"></div>
+      <div class="home-glow home-glow-two"></div>
 
-        <h1>
-          BUILDING THE
-          <span>INTELLIGENT</span>
-          FUTURE OF BUSINESS.
-        </h1>
+      <div class="home-topline">
+        <span class="status">
+          <i></i>
+          AI / AUTOMATION / DIGITAL SYSTEMS
+        </span>
 
-        <p>
-          We turn artificial intelligence, automation and modern technology
-          into practical solutions that help businesses work smarter.
-        </p>
-
-        <div class="actions">
-          <a href="#services" class="btn primary">Explore Services →</a>
-          <a href="#contact" class="btn secondary">Start a Project</a>
-        </div>
-
-        <div class="stats">
-          <div><b>AI</b><small>CONSULTING</small></div>
-          <div><b>AUTO</b><small>AUTOMATION</small></div>
-          <div><b>WEB</b><small>DIGITAL PRODUCTS</small></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="section-title">
-        <small>01 / ABOUT</small>
-        <h2>Technology with a <span>business purpose.</span></h2>
+        <span class="home-index">MISSAMURO / 001</span>
       </div>
 
-      <div class="about-grid">
-        <div>
-          <p class="large">
-            Technology should not simply look impressive. It should solve
-            real problems and create measurable value.
+
+      <div class="home-layout">
+
+        <div class="home-copy">
+
+          <p class="eyebrow reveal">
+            TECHNOLOGY BUILT AROUND REAL PROBLEMS
           </p>
 
-          <p>
-            Missamuro AI Consultant Co. is a technology-focused consultancy
-            working across artificial intelligence, business automation,
-            web development and digital transformation.
+          <h1 class="home-title reveal">
+            <span>BUILD</span>
+            <span class="accent-word">INTELLIGENCE</span>
+            <span>INTO BUSINESS.</span>
+          </h1>
+
+          <p class="home-description reveal">
+            Missamuro designs and builds practical digital systems that
+            connect artificial intelligence, automation, software and
+            modern business operations.
           </p>
 
-          <p>
-            We combine technical thinking with business understanding to
-            build practical, scalable and useful digital solutions.
-          </p>
-        </div>
+          <div class="home-actions reveal">
 
-        <div class="about-card">
-          <div class="symbol">MAI</div>
-          <small>INTELLIGENCE MEETS EXECUTION.</small>
-        </div>
-      </div>
-    </section>
+            <a href="#capabilities" class="primary-action magnetic">
+              <span>Explore capabilities</span>
+              <b>↗</b>
+            </a>
 
-    <section class="section services" id="services">
-      <div class="section-title">
-        <small>02 / SERVICES</small>
-        <h2>What we <span>build.</span></h2>
-      </div>
+            <a href="#work" class="secondary-action magnetic">
+              <span>View selected work</span>
+              <b>→</b>
+            </a>
 
-      <div class="service-grid">
-
-        <article>
-          <b>01</b>
-          <div class="icon">AI</div>
-          <h3>AI Consulting</h3>
-          <p>
-            AI strategy, implementation guidance and intelligent solutions
-            designed around real business needs.
-          </p>
-        </article>
-
-        <article>
-          <b>02</b>
-          <div class="icon">⚙</div>
-          <h3>Business Automation</h3>
-          <p>
-            Automated workflows and connected systems that reduce repetitive
-            work and improve business operations.
-          </p>
-        </article>
-
-        <article>
-          <b>03</b>
-          <div class="icon">&lt;/&gt;</div>
-          <h3>Web Development</h3>
-          <p>
-            Professional websites, web applications and digital experiences
-            built for modern businesses.
-          </p>
-        </article>
-
-        <article>
-          <b>04</b>
-          <div class="icon">DX</div>
-          <h3>Digital Solutions</h3>
-          <p>
-            Technology products and digital tools that help businesses
-            communicate, operate and grow.
-          </p>
-        </article>
-
-      </div>
-    </section>
-
-    <section class="section" id="projects">
-      <div class="section-title">
-        <small>03 / SELECTED WORK</small>
-        <h2>Ideas into <span>reality.</span></h2>
-      </div>
-
-      <div class="project">
-        <div class="project-visual">
-          <span>BUSINESS TECHNOLOGY</span>
-          <strong>GM<span>O</span>TAX</strong>
-        </div>
-
-        <div class="project-info">
-          <small>CASE STUDY</small>
-          <h3>GMOTAX</h3>
-          <p>
-            Digital presence and technology solutions for a tax, accounting
-            and business services environment.
-          </p>
-
-          <div class="tags">
-            <span>WEB</span>
-            <span>BUSINESS</span>
-            <span>DIGITAL</span>
           </div>
+
         </div>
+
+
+        <div class="home-panel reveal">
+
+          <div class="panel-label">
+            <span>MISSAMURO SYSTEM</span>
+            <span>LIVE / 2026</span>
+          </div>
+
+          <div class="system-orbit">
+            <div class="orbit orbit-a"></div>
+            <div class="orbit orbit-b"></div>
+            <div class="orbit-core">
+              <span>M</span>
+            </div>
+
+            <span class="orbit-node node-a">AI</span>
+            <span class="orbit-node node-b">AUTO</span>
+            <span class="orbit-node node-c">WEB</span>
+            <span class="orbit-node node-d">DATA</span>
+          </div>
+
+          <div class="panel-footer">
+            <span>THINK</span>
+            <span>BUILD</span>
+            <span>INTEGRATE</span>
+          </div>
+
+        </div>
+
       </div>
+
+
+      <div class="home-bottom">
+        <span>EST. 2026 / DAR ES SALAAM</span>
+        <a href="#capabilities">ENTER THE STUDIO ↓</a>
+      </div>
+
     </section>
 
-    <section class="section founder">
-      <div class="founder-number">04</div>
 
-      <div>
-        <small>THE FOUNDER</small>
-        <h2>Anthony<br><span>Missama.</span></h2>
+    <!-- =========================
+         POSITIONING STRIP
+    ========================== -->
+    <section class="statement-strip">
+
+      <div class="statement-track">
+        <span>AI CONSULTING</span>
+        <i>✦</i>
+        <span>AUTOMATION</span>
+        <i>✦</i>
+        <span>DIGITAL PRODUCTS</span>
+        <i>✦</i>
+        <span>BUSINESS SYSTEMS</span>
+        <i>✦</i>
+        <span>AI CONSULTING</span>
+        <i>✦</i>
+        <span>AUTOMATION</span>
+        <i>✦</i>
+        <span>DIGITAL PRODUCTS</span>
+        <i>✦</i>
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CAPABILITIES
+    ========================== -->
+    <section class="capabilities" id="capabilities">
+
+      <div class="section-intro reveal">
+
+        <div class="section-number">
+          01
+        </div>
+
+        <div>
+          <p class="section-kicker">WHAT WE BUILD</p>
+
+          <h2>
+            Technology that
+            <em>does something.</em>
+          </h2>
+        </div>
+
+        <p class="section-summary">
+          From a single workflow to an entire digital operating layer,
+          Missamuro turns ideas and business problems into useful systems.
+        </p>
+
+      </div>
+
+
+      <div class="capability-list">
+
+        <article class="capability reveal">
+
+          <div class="capability-number">01</div>
+
+          <div class="capability-main">
+            <p>INTELLIGENCE</p>
+            <h3>AI Consulting</h3>
+            <span>
+              Identify where AI can create measurable value,
+              then turn the opportunity into something usable.
+            </span>
+          </div>
+
+          <div class="capability-detail">
+            AI STRATEGY<br>
+            AI WORKFLOWS<br>
+            AI ASSISTANTS
+          </div>
+
+          <div class="capability-arrow">↗</div>
+
+        </article>
+
+
+        <article class="capability reveal">
+
+          <div class="capability-number">02</div>
+
+          <div class="capability-main">
+            <p>OPERATIONS</p>
+            <h3>Business Automation</h3>
+            <span>
+              Connect tools, data and repetitive processes into
+              workflows that reduce manual work.
+            </span>
+          </div>
+
+          <div class="capability-detail">
+            WORKFLOWS<br>
+            API INTEGRATION<br>
+            PROCESS SYSTEMS
+          </div>
+
+          <div class="capability-arrow">↗</div>
+
+        </article>
+
+
+        <article class="capability reveal">
+
+          <div class="capability-number">03</div>
+
+          <div class="capability-main">
+            <p>INTERFACE</p>
+            <h3>Web Systems</h3>
+            <span>
+              High-quality websites and web applications designed
+              around business goals, users and conversion.
+            </span>
+          </div>
+
+          <div class="capability-detail">
+            WEBSITES<br>
+            WEB APPS<br>
+            DIGITAL PRESENCE
+          </div>
+
+          <div class="capability-arrow">↗</div>
+
+        </article>
+
+
+        <article class="capability reveal">
+
+          <div class="capability-number">04</div>
+
+          <div class="capability-main">
+            <p>INFRASTRUCTURE</p>
+            <h3>Digital Solutions</h3>
+            <span>
+              Dashboards, internal tools, data systems and custom
+              digital products built for specific operational needs.
+            </span>
+          </div>
+
+          <div class="capability-detail">
+            DASHBOARDS<br>
+            INTERNAL TOOLS<br>
+            CUSTOM PRODUCTS
+          </div>
+
+          <div class="capability-arrow">↗</div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SOLUTIONS
+    ========================== -->
+    <section class="solutions">
+
+      <div class="solutions-head reveal">
+
+        <div>
+          <p class="section-kicker">SYSTEM LAYERS</p>
+          <h2>From idea to <em>infrastructure.</em></h2>
+        </div>
+
+        <span class="section-number">01—04</span>
+
+      </div>
+
+
+      <div class="solution-grid">
+
+        <article class="solution reveal">
+          <span>01</span>
+          <h3>AI Assistants</h3>
+          <p>
+            Intelligent interfaces that help teams retrieve,
+            process and act on information.
+          </p>
+        </article>
+
+        <article class="solution reveal">
+          <span>02</span>
+          <h3>Workflow Systems</h3>
+          <p>
+            Automated processes connecting people, applications,
+            documents and business data.
+          </p>
+        </article>
+
+        <article class="solution reveal">
+          <span>03</span>
+          <h3>Business Dashboards</h3>
+          <p>
+            Clear operational views that transform scattered
+            information into usable insight.
+          </p>
+        </article>
+
+        <article class="solution reveal">
+          <span>04</span>
+          <h3>Custom Digital Products</h3>
+          <p>
+            Purpose-built websites, applications and systems
+            designed around a specific business.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SELECTED WORK
+    ========================== -->
+    <section class="work" id="work">
+
+      <div class="work-heading reveal">
+
+        <div>
+          <p class="section-kicker">SELECTED WORK</p>
+
+          <h2>
+            Built in the
+            <em>real world.</em>
+          </h2>
+        </div>
 
         <p>
-          Technology-focused builder and founder of Missamuro AI Consultant
-          Co., focused on connecting artificial intelligence, technology
-          and practical business execution.
+          A growing body of digital work across business,
+          resources, events and technology.
         </p>
+
       </div>
+
+
+      <!-- GMOTAX -->
+      <article class="project project-gmotax reveal">
+
+        <div class="project-visual gmotax-visual">
+
+          <div class="project-grid"></div>
+
+          <div class="client-brand">
+            <span>CLIENT / GMOTAX</span>
+
+            <img
+              src="assets/gmotax-logo.jpg"
+              alt="GMOTAX logo"
+              class="gmotax-logo"
+              loading="lazy"
+            />
+
+            <small>TAX • ACCOUNTING • BUSINESS</small>
+          </div>
+
+
+
+          <div class="project-corner">
+            <span>02 / 04</span>
+            <span>TAX • BUSINESS • DIGITAL</span>
+          </div>
+
+        </div>
+
+
+        <div class="project-content">
+
+          <div class="project-label">
+            <span>CLIENT PROJECT</span>
+            <span>GMOTAX</span>
+          </div>
+
+          <h3>
+            Digital infrastructure
+            for a modern tax &
+            business environment.
+          </h3>
+
+          <p>
+            Missamuro's work around GMOTAX connects professional
+            business services with practical digital presentation,
+            web systems and technology-driven workflows.
+          </p>
+
+          <div class="project-services">
+
+            <span>Tax & business systems</span>
+            <span>Digital presence</span>
+            <span>Web development</span>
+            <span>Digital solutions</span>
+
+          </div>
+
+          <a href="#contact" class="project-link magnetic">
+            Discuss a similar system
+            <span>↗</span>
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- BENDERA -->
+      <article class="project project-bendera reveal">
+
+        <div class="project-content">
+
+          <div class="project-label">
+            <span>WEB EXPERIENCE</span>
+            <span>BENDERA RESOURCES</span>
+          </div>
+
+          <h3>
+            A sharper digital
+            presence for a
+            resources business.
+          </h3>
+
+          <p>
+            A corporate website experience focused on clarity,
+            credibility and presenting a business professionally
+            in the digital space.
+          </p>
+
+          <div class="project-services">
+            <span>Corporate website</span>
+            <span>Brand presentation</span>
+            <span>Responsive design</span>
+          </div>
+
+          <a href="#contact" class="project-link magnetic">
+            Build a web presence
+            <span>↗</span>
+          </a>
+
+        </div>
+
+
+        <div class="project-visual bendera-visual">
+          <div class="project-number">03</div>
+          <div class="visual-word">BENDERA</div>
+          <span>RESOURCES / DIGITAL</span>
+        </div>
+
+      </article>
+
+
+      <!-- BLUE BEACH -->
+      <article class="project project-blue reveal">
+
+        <div class="project-visual blue-visual">
+          <div class="project-number">04</div>
+          <div class="visual-word">BLUE<br>BEACH</div>
+          <span>SUMMIT / DIGITAL EXPERIENCE</span>
+        </div>
+
+
+        <div class="project-content">
+
+          <div class="project-label">
+            <span>DIGITAL EXPERIENCE</span>
+            <span>BLUE BEACH SUMMIT</span>
+          </div>
+
+          <h3>
+            Designing digital
+            identity around
+            an experience.
+          </h3>
+
+          <p>
+            A premium event-oriented digital presence combining
+            visual identity, structured information and a focused
+            user experience.
+          </p>
+
+          <div class="project-services">
+            <span>Event website</span>
+            <span>Digital identity</span>
+            <span>User experience</span>
+          </div>
+
+          <a href="#contact" class="project-link magnetic">
+            Create an experience
+            <span>↗</span>
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- MISSAMURO -->
+      <article class="project project-missamuro reveal">
+
+        <div class="project-content">
+
+          <div class="project-label">
+            <span>FLAGSHIP SYSTEM</span>
+            <span>MISSAMURO</span>
+          </div>
+
+          <h3>
+            The studio building
+            its own digital
+            infrastructure.
+          </h3>
+
+          <p>
+            Missamuro itself is an ongoing experiment in designing
+            intelligent digital products, automation workflows and
+            modern technology services.
+          </p>
+
+          <div class="project-services">
+            <span>AI consulting</span>
+            <span>Automation</span>
+            <span>Software</span>
+            <span>Digital systems</span>
+          </div>
+
+          <a href="#contact" class="project-link magnetic">
+            Start something new
+            <span>↗</span>
+          </a>
+
+        </div>
+
+
+        <div class="project-visual missamuro-visual">
+          <div class="missamuro-symbol">M</div>
+          <span>BUILT BY MISSAMURO</span>
+        </div>
+
+      </article>
+
     </section>
 
-    <section class="section contact" id="contact">
-      <small>05 / CONTACT</small>
 
-      <h2>
-        HAVE AN IDEA?
-        <span>LET'S BUILD IT.</span>
-      </h2>
+    <!-- =========================
+         PROCESS
+    ========================== -->
+    <section class="method">
 
-      <p>
-        Tell us what you're trying to build and let's turn the idea into
-        something real.
-      </p>
+      <div class="method-intro reveal">
 
-      <div class="actions">
-        <a class="btn primary" href="mailto:anthonymissama43@gmail.com">
-          Email Us →
-        </a>
+        <div>
+          <p class="section-kicker">HOW WE WORK</p>
 
-        <a class="btn secondary"
-           href="https://wa.me/25576673113"
-           target="_blank">
-          WhatsApp
-        </a>
+          <h2>
+            Think clearly.
+            <br>
+            <em>Build deliberately.</em>
+          </h2>
+        </div>
+
+        <p>
+          Good technology starts before the first line of code.
+          We begin with the problem, then design the system around it.
+        </p>
+
       </div>
 
-      <div class="contact-details">
-        <span>anthonymissama43@gmail.com</span>
-        <span>+255 766 731 13</span>
+
+      <div class="method-flow">
+
+        <div class="method-step reveal">
+          <span>01</span>
+          <strong>DISCOVER</strong>
+          <p>Understand the business, problem and desired outcome.</p>
+        </div>
+
+        <div class="method-step reveal">
+          <span>02</span>
+          <strong>DESIGN</strong>
+          <p>Map the experience, workflow and technical direction.</p>
+        </div>
+
+        <div class="method-step reveal">
+          <span>03</span>
+          <strong>BUILD</strong>
+          <p>Turn the plan into a working digital product or system.</p>
+        </div>
+
+        <div class="method-step reveal">
+          <span>04</span>
+          <strong>INTEGRATE</strong>
+          <p>Connect the tools, data and processes around the solution.</p>
+        </div>
+
+        <div class="method-step reveal">
+          <span>05</span>
+          <strong>IMPROVE</strong>
+          <p>Measure, refine and evolve the system as the business grows.</p>
+        </div>
+
       </div>
+
+    </section>
+
+
+    <!-- =========================
+         STUDIO / FOUNDER
+    ========================== -->
+    <section class="studio" id="studio">
+
+      <div class="studio-header reveal">
+
+        <span class="section-number">03</span>
+
+        <div>
+          <p class="section-kicker">THE STUDIO</p>
+          <h2>Built by a <em>builder.</em></h2>
+        </div>
+
+      </div>
+
+
+      <div class="studio-layout">
+
+        <div class="founder-frame reveal">
+
+          <div class="founder-image">
+            <img
+              src="assets/anthony-missama.jpg"
+              alt="Anthony Missama — Founder of Missamuro AI Consultant Co."
+              loading="lazy"
+            />
+
+            <div class="portrait-overlay">
+              <span>ANTHONY MISSAMA</span>
+              <span>FOUNDER / BUILDER</span>
+            </div>
+          </div>
+
+          <div class="founder-frame-meta">
+            <span>MISSAMURO / FOUNDER</span>
+            <span>DAR ES SALAAM / TZ</span>
+          </div>
+
+        </div>
+
+
+        <div class="studio-copy reveal">
+
+          <p class="studio-label">ANTHONY MISSAMA / FOUNDER</p>
+
+          <h3>
+            I build technology
+            around <em>real problems.</em>
+          </h3>
+
+          <p>
+            I'm Anthony Missama — founder of Missamuro AI Consultant Co.
+            My work sits at the intersection of artificial intelligence,
+            business operations, software and digital systems.
+          </p>
+
+          <p>
+            I am interested in what happens when technology is treated
+            as infrastructure rather than decoration: when automation
+            removes unnecessary work, when data becomes useful, and when
+            software makes a business easier to operate.
+          </p>
+
+          <p>
+            Missamuro is the platform through which I turn that approach
+            into practical work for businesses and organizations.
+          </p>
+
+
+          <div class="founder-meta">
+
+            <div>
+              <span>FOCUS</span>
+              <strong>AI + AUTOMATION</strong>
+            </div>
+
+            <div>
+              <span>BUILD</span>
+              <strong>DIGITAL SYSTEMS</strong>
+            </div>
+
+            <div>
+              <span>APPROACH</span>
+              <strong>80% BUILD / 20% THEORY</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+    <section class="contact" id="contact">
+
+      <div class="contact-grid"></div>
+      <div class="contact-glow"></div>
+
+      <div class="contact-top reveal">
+
+        <span class="section-number">04</span>
+
+        <p class="section-kicker">START A PROJECT</p>
+
+      </div>
+
+
+      <div class="contact-layout">
+
+        <div class="contact-copy reveal">
+
+          <h2>
+            Have a problem
+            worth <em>building around?</em>
+          </h2>
+
+          <p>
+            Tell us what you're trying to improve, automate, launch
+            or build. We'll start from the problem and work toward
+            the right digital solution.
+          </p>
+
+        </div>
+
+
+        <div class="contact-actions reveal">
+
+          <a
+            href="mailto:anthonymissama43@gmail.com"
+            class="contact-option magnetic"
+          >
+            <span>
+              <small>EMAIL</small>
+              anthonymissama43@gmail.com
+            </span>
+            <b>↗</b>
+          </a>
+
+          <a
+            href="https://wa.me/25576673113"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-option magnetic"
+          >
+            <span>
+              <small>WHATSAPP</small>
+              Start a conversation
+            </span>
+            <b>↗</b>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="contact-bottom reveal">
+
+        <span>MISSAMURO AI CONSULTANT CO.</span>
+        <span>AI / AUTOMATION / DIGITAL SYSTEMS</span>
+
+      </div>
+
     </section>
 
   </main>
 
-  <footer>
-    <strong>MISSAMURO<span>.</span></strong>
-    <small>AI CONSULTANT CO.</small>
-    <p>© <span id="year"></span> Missamuro AI Consultant Co. — Built for the future.</p>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <span class="footer-mark">M</span>
+        <div>
+          <strong>MISSAMURO</strong>
+          <small>AI CONSULTANT CO.</small>
+        </div>
+      </div>
+
+      <div class="footer-center">
+        <span>BUILD INTELLIGENCE INTO BUSINESS.</span>
+      </div>
+
+      <div class="footer-right">
+        <span>© <span id="year"></span> MISSAMURO</span>
+        <span>DAR ES SALAAM / TANZANIA</span>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>AI / AUTOMATION / DIGITAL SYSTEMS</span>
+      <span>MISSAMURO AI CONSULTANT CO.</span>
+    </div>
+
   </footer>
 
   <script src="js/script.js"></script>
+
 </body>
 </html>
